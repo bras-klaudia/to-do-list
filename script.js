@@ -1,11 +1,11 @@
 {
     const tasks = [
         {
-            content: "nagrać lekcję",
+            content: "zrobić moduł 6",
             done: false,
         },
         {
-            content: "zjeść pierogi",
+            content: "zrobić pracę domową",
             done: true,
         },
     ];
@@ -37,8 +37,9 @@
               <li
                ${task.done ? " style=\"text-decoration: line-through\"" : ""}
               >
-              <button class="js-done"> zrobione? </button>
               <button class="js-remove"> usuń </button>
+              <button class="js-done"> zrobione? </button>
+
                ${task.content}
               </li>
             `;
@@ -64,7 +65,6 @@
         });
 
     });
-
 
     const onFormSubmit = (event) => {
         event.preventDefault();
