@@ -10,7 +10,7 @@ html {
 
 .body {
     background-color: #eeeded;
-    margin: auto 20px;
+    margin: 20px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -20,18 +20,27 @@ html {
     font-weight: 700;
 }
 
-.container {
-    display: grid;
-    grid-gap: 10px;
-    align-content: center;
-}
 
-.container__header {
-    font-size: 20px;
-    font-weight: 700;
-}
 
-.container__item {
+
+.section {
     background-color: rgb(255, 255, 255);
+}
+
+
+.section__body {
     padding: 10px;
 }
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+.section__header {
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
