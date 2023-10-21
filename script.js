@@ -54,17 +54,19 @@
                 removeTask(index));
 
         });
-    };
 
-    const toggleDoneButtons = document.querySelectorAll(".js-done");
 
-    toggleDoneButtons.forEach((toggleDoneButton, index) => {
-        toggleDoneButton.addEventListener("click", () => {
-            toggleTaskDone(index);
+        const toggleDoneButtons = document.querySelectorAll(".js-done");
+
+        toggleDoneButtons.forEach((toggleDoneButton, index) => {
+            toggleDoneButton.addEventListener("click", () => {
+                toggleTaskDone(index);
+
+            });
 
         });
 
-    });
+    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
