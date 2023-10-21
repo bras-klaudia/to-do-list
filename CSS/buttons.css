@@ -1,4 +1,11 @@
 .addButton {
-    background-color: seagreen;
+    background-color: teal;
     color: white
+}
+
+
+
+.js-remove {
+    
+    background-image: url("../images/delete.png");
 }
