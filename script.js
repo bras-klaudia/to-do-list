@@ -37,10 +37,12 @@
               <li
                ${task.done ? " style=\"text-decoration: line-through\"" : ""}
               >
-              <button class="js-remove"> usuń </button>
               <button class="js-done"> zrobione? </button>
+              
+              ${task.content}
+              <button class="js-remove"> <img class="button__image" src="../images/delete.png" height=15px></button>
 
-               ${task.content}
+
               </li>
             `;
         }
