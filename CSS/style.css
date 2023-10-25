@@ -8,20 +8,13 @@ html {
     box-sizing: inherit;
 }
 
+.container {
+    margin: 20px;
+}
 .body {
     background-color: #eeeded;
-    margin: 20px;
     font-family: "Montserrat", sans-serif;
 }
-
-.header {
-    font-size: 30px;
-    padding: 15px 0;
-    font-weight: 700;
-}
-
-
-
 
 .section {
     background-color: rgb(255, 255, 255);
@@ -44,3 +37,24 @@ html {
     border-bottom: 1px solid #ddd;
 }
 
+.section__tasks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.section__tasks--item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+.task__done {
+text-decoration: line-through;
+}

@@ -1,8 +1,14 @@
-.addButton {
+.form__button {
     background-color: teal;
     color: white;
     border: none;
+   padding: 10px;
+    font-weight: 300;
 
+}
+
+.form__newTask{
+    padding: 10px;
 }
 
 

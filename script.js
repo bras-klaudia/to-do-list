@@ -34,8 +34,8 @@
 
         for (const task of tasks) {
             htmlString += `
-              <li
-               ${task.done ? " style=\"text-decoration: line-through\"" : ""}
+              <li class="section__tasks--item"
+               ${task.done ? "task__done" : ""}
               >
               <button class="js-done"> zrobione? </button>
               
