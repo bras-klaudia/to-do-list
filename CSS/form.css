@@ -20,5 +20,12 @@
     border: none;
     padding: 10px;
     font-weight: 300;
+}
 
+.form__button:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 35%);
 }
