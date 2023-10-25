@@ -34,14 +34,18 @@
 
         for (const task of tasks) {
             htmlString += `
-              <li class="section__tasks--item"
-               ${task.done ? "task__done" : ""}
+              <li
+              class="tasks__item js-task"
               >
-              <button class="js-done"> zrobione? </button>
               
+              <button class="tasks__button tasks__button--toggleDone js-toggleDone">
+                ${task.done ? "✔" : ""}
+              </button>
+            
+              <span class="${task.done ? "tasks__content--done" : ""}" >
               ${task.content}
-              <button class="js-remove"> <img class="button__image" src="../images/delete.png" height=15px></button>
-
+              </span>
+              <button class="tasks__button tasks__button--remove js-remove"> 🗑</button>
 
               </li>
             `;
@@ -58,7 +62,7 @@
         });
 
 
-        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {

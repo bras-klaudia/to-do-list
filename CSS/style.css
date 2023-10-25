@@ -9,7 +9,9 @@ html {
 }
 
 .container {
-    margin: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
 }
 .body {
     background-color: #eeeded;
@@ -18,6 +20,7 @@ html {
 
 .section {
     background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px #ddd;
 }
 
 
@@ -31,30 +34,13 @@ html {
     grid-gap: 20px;
 }
 
+@media (max-width: 767px) {.form {
+    grid-template-columns: 1fr;
+}}
+
 .section__header {
     font-size: 20px;
     padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 
-.section__tasks {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
-.section__tasks--item {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 10px;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-
-}
-
-
-.task__done {
-text-decoration: line-through;
-}
