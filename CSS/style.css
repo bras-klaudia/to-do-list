@@ -8,39 +8,13 @@ html {
     box-sizing: inherit;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 900px;
-}
+
 .body {
     background-color: #eeeded;
     font-family: "Montserrat", sans-serif;
 }
 
-.section {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px #ddd;
-}
 
 
-.section__body {
-    padding: 10px;
-}
 
-.form {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 20px;
-}
-
-@media (max-width: 767px) {.form {
-    grid-template-columns: 1fr;
-}}
-
-.section__header {
-    font-size: 20px;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
 
