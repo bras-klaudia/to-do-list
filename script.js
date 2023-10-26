@@ -25,7 +25,6 @@
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () =>
                 removeTask(index));
-
         });
     };
 
@@ -36,9 +35,7 @@
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
-
             });
-
         });
     };
 
@@ -84,7 +81,6 @@
             newTaskElement.value = "";
         }
         newTaskElement.focus();
-
     };
 
     const init = () => {
