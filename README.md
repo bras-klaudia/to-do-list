@@ -6,5 +6,9 @@ This is simple app created during YouCode course. It allows you for adding some 
 ## Demo
 https://bras-klaudia.github.io/to-do-list/
 
+![Screen1 To-do-list](images/screen1.png)
+![Screen2 To-do-list](images/screen2.png)
+
+
 ## Technology
 HTML, CSS, JavaScprit
