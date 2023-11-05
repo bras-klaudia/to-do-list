@@ -67,13 +67,10 @@
     };
 
     const renderTasks = () => {
-        let htmlString = "";
-
-        for (const task of tasks) {
-            htmlString += `
-          <li
-          class="tasks__item js-task"
-          >
+        const taskToHTML = task =>  `
+          <li class="
+          tasks__item${task.done && hideDoneTasks ? "tasks__item--hiden" : " " } js-task
+          ">
           
           <button class="tasks__button tasks__button--toggleDone js-toggleDone">
             ${task.done ? "✔" : ""}
@@ -86,9 +83,8 @@
 
           </li>
         `;
-        }
-
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+      const tasksElement = document.querySelector("js-tasks");
+      tasksElement.innerHTML = tasks.map(taskToHTML).join("");
     };
 
     const renderButtons = () => {
