@@ -37,6 +37,8 @@
                 ...task,
                 done: true,
             }));
+
+            render();
     };
 
     const toggleHiddenDoneTasks = () => {
