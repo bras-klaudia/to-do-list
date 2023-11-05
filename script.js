@@ -1,5 +1,6 @@
 {
-    const tasks = [];
+  let tasks = [];
+    let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -39,35 +40,49 @@
         });
     };
 
-
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
-              <li
-              class="tasks__item js-task"
-              >
-              
-              <button class="tasks__button tasks__button--toggleDone js-toggleDone">
-                ${task.done ? "✔" : ""}
-              </button>
-            
-              <span class="${task.done ? "tasks__content--done" : ""}" >
-              ${task.content}
-              </span>
-              <button class="tasks__button tasks__button--remove js-remove"> 🗑</button>
+          <li
+          class="tasks__item js-task"
+          >
+          
+          <button class="tasks__button tasks__button--toggleDone js-toggleDone">
+            ${task.done ? "✔" : ""}
+          </button>
+        
+          <span class="${task.done ? "tasks__content--done" : ""}" >
+          ${task.content}
+          </span>
+          <button class="tasks__button tasks__button--remove js-remove"> 🗑</button>
 
-              </li>
-            `;
+          </li>
+        `;
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
+
+    const renderButtons = () => {
+    };
+
+
+    const bindButtonsEvents = () => {
+
+        //if must be included
+
+    };
+
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
 
         bindRemoveEvents();
         bindToggleDoneEvents();
-
-
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
