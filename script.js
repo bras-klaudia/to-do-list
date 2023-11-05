@@ -32,6 +32,13 @@
         render();
     };
 
+    const markAllTaskDone = () => {
+        tasks = tasks.map((task) => ({
+                ...task,
+                done: true,
+            }));
+    };
+
     const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
