@@ -1,12 +1,12 @@
 {
-  let tasks = [];
+    let tasks = [];
     let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
-
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
         render();
     };
 
@@ -16,7 +16,11 @@
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = [
+            !tasks.map({done})
+
+        ];
+
         render();
     };
 
